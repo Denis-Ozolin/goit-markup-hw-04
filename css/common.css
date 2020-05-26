@@ -106,14 +106,27 @@ img {
   width: 44px;
   height: 44px;
 
-  text-align: center;
-  font-weight: 700;
-  font-size: 26px;
-
-  color: var(--bgc-accent-white);
-  background-color: lightblue;
-  border: 1px solid var(--accent-color);
   border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagram {
+  background-image: url(../images/instagram.svg);
+}
+
+.twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+.facebook {
+  background-image: url(../images/facebook.svg);
+}
+
+.linkedin {
+  background-image: url(../images/linkedin.svg);
 }
 
 .social-icon:hover,
@@ -192,12 +205,29 @@ img {
   color: var(--primary-text-color);
 }
 
-.feedback-list > li:first-child::before {
-  height: 11px;
-  width: 16px;
+.feedback-header::before {
   display: inline-block;
+  margin-right: 10px;
+
+  content: "";
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.envelope-icon::before {
+  width: 16px;
+  height: 11px;
+
   background-image: url(../images/envelope.svg);
-  background-size: cover;
+}
+
+.mobile-icon::before {
+  width: 10px;
+  height: 15px;
+
+  background-image: url(../images/mobile.svg);
 }
 
 .feedback-header:hover,
