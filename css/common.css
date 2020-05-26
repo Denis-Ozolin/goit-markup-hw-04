@@ -179,6 +179,7 @@ img {
   display: flex;
   margin-left: auto;
 }
+
 .feedback-list > li:first-child {
   margin-right: 50px;
 }
@@ -189,6 +190,14 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+}
+
+.feedback-list > li:first-child::before {
+  height: 11px;
+  width: 16px;
+  display: inline-block;
+  background-image: url(../images/envelope.svg);
+  background-size: cover;
 }
 
 .feedback-header:hover,
