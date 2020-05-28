@@ -205,8 +205,9 @@
   justify-content: space-between;
 }
 
-.customer-logo {
-  display: block;
+.customer {
+  display: flex;
+  justify-content: center;
   width: 170px;
   height: 90px;
   padding: 25px 0;
@@ -214,11 +215,42 @@
   border-radius: 4px;
 }
 
-.customer-logo > img {
-  margin: 0 auto;
+.customer:hover,
+.customer:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .customer-logo:hover,
 .customer-logo:focus {
-  border: 1px solid var(--accent-color);
+  fill: var(--accent-color), var(--accent-color);
+}
+
+.logo1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.logo2 {
+  width: 44px;
+  height: 49px;
+}
+
+.logo3 {
+  width: 41px;
+  height: 42.6px;
+}
+
+.logo4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.logo5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo6 {
+  width: 88.48px;
+  height: 45.44px;
 }

@@ -193,14 +193,16 @@ img {
   margin-left: auto;
 }
 
-.feedback-list > li:first-child {
+.feedback-list.top > li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.feedback-list.top > li:first-child {
   margin-right: 50px;
 }
 
 .feedback-header {
-  display: inline-flex;
-  align-items: center;
-
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -208,28 +210,16 @@ img {
   color: var(--primary-text-color);
 }
 
-.feedback-header::before {
+.envelope-icon {
   margin-right: 10px;
-
-  content: "";
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-}
-
-.envelope-icon::before {
   width: 16px;
   height: 11px;
-
-  background-image: url(../images/envelope.svg);
 }
 
-.mobile-icon::before {
+.mobile-icon {
+  margin-right: 10px;
   width: 10px;
   height: 15px;
-
-  background-image: url(../images/mobile.svg);
 }
 
 .feedback-header:hover,
