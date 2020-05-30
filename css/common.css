@@ -101,39 +101,38 @@ img {
   justify-content: space-between;
 }
 
-.social-icon {
-  display: inline-block;
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
+}
 
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  --color4: var(--bgc-accent-white);
+}
+
+/* соц сети подвал */
+.social.footer-social .social-link {
   background-color: rgba(255, 255, 255, 0.1);
-  background-repeat: no-repeat;
-  background-position: center;
+  --color4: var(--bgc-accent-white);
 }
 
-.instagram {
-  background-image: url(../images/instagram.svg);
-}
-
-.twitter {
-  background-image: url(../images/twitter.svg);
-}
-
-.facebook {
-  background-image: url(../images/facebook.svg);
-}
-
-.linkedin {
-  background-image: url(../images/linkedin.svg);
-}
-
-.social-icon:hover,
-.social-icon:focus {
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
   background-color: var(--accent-color);
 }
-
 /* HEADER */
 .header-page {
   background-color: var(--bgc-accent-white);
@@ -193,16 +192,15 @@ img {
   margin-left: auto;
 }
 
-.feedback-list.top > li {
-  display: inline-flex;
-  align-items: center;
-}
-
 .feedback-list.top > li:first-child {
   margin-right: 50px;
 }
 
 .feedback-header {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -210,14 +208,16 @@ img {
   color: var(--primary-text-color);
 }
 
-.envelope-icon {
+.feedback-header > svg {
   margin-right: 10px;
+}
+
+.envelope-icon {
   width: 16px;
   height: 11px;
 }
 
 .mobile-icon {
-  margin-right: 10px;
   width: 10px;
   height: 15px;
 }
@@ -225,6 +225,7 @@ img {
 .feedback-header:hover,
 .feedback-header:focus {
   color: var(--accent-color);
+  --color5: var(--accent-color);
 }
 
 /* FOOTER */
@@ -280,7 +281,14 @@ img {
   min-width: 206px;
 }
 
+/* Саша сказал, что єто не заголовок. */
 .invite {
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  color: var(--bgc-accent-white);
+
   margin-bottom: 21px;
 }
 
